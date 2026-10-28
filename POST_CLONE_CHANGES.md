@@ -89,11 +89,9 @@ generic bridge checkout currently has no tracked source modifications.
 - Direct tool calls in the fresh local chat successfully verified Isaac Sim
   5.1.0, the endpoint on localhost:8766, and the five expected scene prims.
   This is stronger evidence than tool discovery alone.
-- `tools/tunnel-client-v0.0.18/`, a local tunnel profile, and
-  `BrickSim/scripts/start_chatgpt_tunnel.sh` support the optional ChatGPT tunnel
-  route. The previous setup notes record registration, but runtime readiness
-  was not verified. The user chose local Codex instead. No runtime key is
-  copied into this document or source control.
+- The optional ChatGPT tunnel route (client binaries, profile and
+  `BrickSim/scripts/start_chatgpt_tunnel.sh`) was removed on 2026-10-28; local
+  stdio MCP gateways are the only supported transport.
 
 ## Single-arm collision and tracking changes
 

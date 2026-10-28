@@ -65,86 +65,14 @@ loading and the full simulated Quick Start returned success after compatibility
 fixes. The simulator startup test used its bundled ROS libraries. No real robot
 driver tool was called, and motion tracking/contact performance remains untested.
 
-## Regular ChatGPT chats: tunnel created; runtime pending
+## ChatGPT tunnel: removed
 
-ChatGPT web does not read local Codex MCP configuration. Use its **Add custom MCP
-server → Tunnel** route for a private local server. An ordinary TCP bridge port
-such as 8766 is **not** a ChatGPT MCP URL. Do not expose either raw bridge publicly.
-
-The official OpenAI tunnel client 0.0.18 is downloaded under
-`../tools/tunnel-client-v0.0.18/`; its Linux archive SHA256 was checked against
-the official release checksums. Binary quickstart/help were inspected.
-
-After explicit user approval, **RISE Isaac Sim** was created in the Personal
-organization and associated with the single available ChatGPT workspace.
-Tunnel ID: `tunnel_6ae0430847888191a155fc8c3f92f1b3`.
-The local stdio profile is configured at
-`outputs/rise/tunnel-profile/rise-isaac.yaml`; it references the runtime secret
-through `env:CONTROL_PLANE_API_KEY` and uses a loopback-only health listener.
-No secret is stored in that profile.
-
-The key form is prepared as **RISE Isaac Sim runtime**, current Default project,
-Restricted permissions with only **Tunnels Read + Use**, and **30-day expiration**.
-Automatic approval review blocked the final key-creation click, requiring
-separate credential-creation confirmation. The user completed that click and
-reported the key ready; the secret has not been read by the agent. Runtime
-authentication, tunnel readiness, and the ChatGPT connection are not verified.
-
-After the user creates the key, start the simulator in one terminal and the
-tunnel in another:
-
-```bash
-cd /home/kaleb/projects/RISE/BrickSim
-./scripts/run_rise_lab.sh
-```
-
-```bash
-cd /home/kaleb/projects/RISE/BrickSim
-./scripts/start_chatgpt_tunnel.sh
-```
-
-The second script checks the simulator endpoint, prompts for the key with input
-echo disabled, runs the tunnel doctor, then runs the tunnel in the foreground.
-The secret is supplied in process memory through the environment, not saved in
-the repository or placed in a shell command/history. Keep this terminal open
-while ChatGPT is using the connection. Ctrl+C stops the tunnel. It is not an
-installed background service.
-
-The remaining account-side steps require access to the intended Platform
-organization and ChatGPT workspace:
-
-1. Sign in to [Platform tunnel settings](https://platform.openai.com/settings/organization/tunnels).
-   Create or select the intended tunnel and associate the ChatGPT workspace.
-   Creation requires Tunnels Read + Manage; use requires Tunnels Read + Use.
-2. Create/use a restricted runtime key with the required tunnel permissions.
-   Enter it locally as `CONTROL_PLANE_API_KEY`; do not paste it into chat, save
-   it in this repository, or use an administrative key as the runtime key.
-3. With the actual tunnel ID, initialize a named stdio profile:
-
-   ```bash
-   ../tools/tunnel-client-v0.0.18/tunnel-client init \
-     --profile rise-isaac \
-     --profile-dir "$PWD/outputs/rise/tunnel-profile" \
-     --tunnel-id YOUR_ACTUAL_TUNNEL_ID \
-     --mcp-command "$PWD/scripts/rise_isaac_mcp.sh"
-   ```
-
-   Consult current `doctor --help` and `run --help` for profile-directory flags,
-   then validate and start the profile with the runtime key supplied through its
-   environment reference. Report connection success only when health/readiness
-   checks pass; do not use a fake tunnel ID to imply installation completion.
-4. While the simulator and tunnel client are running, open
-   [ChatGPT Plugins](https://chatgpt.com/plugins), select Add custom MCP server,
-   choose Tunnel, and select the same tunnel. Complete account permissions and
-   connection review, then test a read-only status call before scene changes.
-
-The signed-in Chrome page is user-controlled until it is shared through a
-supported browser attachment. A screenshot is enough to guide the next click,
-but does not give browser-control access or finish account authorization.
-
-References: [OpenAI MCP configuration](https://learn.chatgpt.com/docs/extend/mcp?surface=cli),
-[private tunnel setup](https://developers.openai.com/api/docs/guides/secure-mcp-tunnels),
-[ChatGPT custom MCP connection](https://developers.openai.com/api/docs/guides/custom-mcp-server).
+The optional ChatGPT tunnel route was removed on 2026-10-28 at the user's
+request. The tunnel client, local profile and `scripts/start_chatgpt_tunnel.sh`
+were moved to the desktop Trash. The local `rise-kit`/`rise-isaac` stdio
+gateways are the only supported MCP transport. The Platform-side tunnel
+(`tunnel_6ae0430847888191a155fc8c3f92f1b3`) and its runtime key still exist in
+the user's OpenAI organization until revoked there.
 
 ## Local compatibility patches
 

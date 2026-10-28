@@ -83,6 +83,9 @@ Verified the user's existing visible simulator bridge is running (30 advertised
 tools on port 8766). Runtime authentication and a connected ChatGPT tool call
 are not verified yet; the user was directed to enter the key in their terminal.
 
+**2026-10-28 update:** tunnel route removed at the user's request; local files
+moved to Trash. Revoke the Platform tunnel and runtime key in the OpenAI UI.
+
 ## 2026-10-26 — Local Codex lab scene
 
 The user chose local Codex for simulator control. Started a visible lab

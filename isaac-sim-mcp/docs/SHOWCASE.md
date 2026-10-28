@@ -78,11 +78,9 @@ room with a simple tabletop at z=0 and studio lights and removes the ROS graphs
 and loose objects. This variant passed the fresh physics run described above;
 earlier experiment reports still describe their original scene.
 
-The generated transfer archive at `RISE/transfers/RISE-school-showcase.zip`
-contains these files, the required controller/recording scripts and research
-guides. Extract it and run the command above. It does not install Isaac Sim,
-include virtual environments, transfer the entire lab asset collection, or
-replace the complete research workspace backup.
+The earlier transfer ZIP was retired on 2026-10-28 because it shipped a
+pre-fix verifier. To demo on another machine, clone the private repository
+below instead.
 
 The private `kalebcoleman/rise-two-arm-research` repository packages the demo,
 research additions, checkpoints, evidence, pinned upstream revisions and
