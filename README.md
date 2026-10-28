@@ -4,6 +4,8 @@ Two opposing UR5e arms with RG2 grippers manipulating a shared bar in Isaac
 Sim 5.1. This repository preserves the local research additions, scene assets,
 experiment results and upstream reconstruction instructions.
 
+**Project page:** https://kalebcoleman.github.io/rise-two-arm-research/
+
 ## Show the experiment
 
 After cloning, open `checkpoints/Approved/00 WATCH MOTION.usda` in Isaac Sim
