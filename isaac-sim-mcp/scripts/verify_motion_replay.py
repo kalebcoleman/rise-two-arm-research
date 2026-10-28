@@ -51,9 +51,16 @@ for label, seconds in [('start', 0), ('middle', duration / 2), ('end', duration)
     timeline.set_current_time(seconds)
     for _ in range(4):
         app.update()
-    rep.orchestrator.step(rt_subframes=4, delta_time=0)
-    data = rgb.get_data()
-    assert data.ndim == 3 and data.shape[0] == 720
+    # A cold shader/material cache can leave the first readback empty even
+    # after step returns. Wait for the render product, without advancing time.
+    for _ in range(30):
+        rep.orchestrator.step(rt_subframes=4, delta_time=0)
+        data = rgb.get_data()
+        if data.ndim == 3 and data.shape[0] == 720:
+            break
+        app.update()
+    else:
+        raise RuntimeError('Camera readback did not become ready within 30 captures')
     Image.fromarray(data).save(str(path.parent / ('replay-' + label + '.png')))
     position = np.array(UsdGeom.XformCache(Usd.TimeCode(seconds * 60)).GetLocalToWorldTransform(bar))[3, :3]
     poses.append({'label': label, 'time_s': seconds, 'bar_position_m': position.tolist()})
