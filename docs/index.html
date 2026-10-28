@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Two-Arm Sim Lab</title>
+<meta name="description" content="Running, measuring and learning from a simulated dual UR5e bimanual manipulation setup in Isaac Sim, as a step toward a digital twin.">
+<style>
+  :root {
+    --bg: #f7f7f5;
+    --panel: #ffffff;
+    --ink: #1d1f23;
+    --muted: #5d6470;
+    --line: #dcdfe4;
+    --accent: #1f6feb;
+    --ok: #2e7d4f;
+    --warn: #b7791f;
+    --bad: #b03a2e;
+    --track: #6b4fbb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101216;
+      --panel: #171a20;
+      --ink: #e8eaee;
+      --muted: #9aa3b2;
+      --line: #2a2f38;
+      --accent: #6aa8ff;
+      --ok: #5cc68a;
+      --warn: #e0a84a;
+      --bad: #e87a6e;
+      --track: #a88cf0;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #101216;
+    --panel: #171a20;
+    --ink: #e8eaee;
+    --muted: #9aa3b2;
+    --line: #2a2f38;
+    --accent: #6aa8ff;
+    --ok: #5cc68a;
+    --warn: #e0a84a;
+    --bad: #e87a6e;
+    --track: #a88cf0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  a { color: var(--accent); }
+  img { max-width: 100%; height: auto; display: block; border-radius: 8px; }
+  main { max-width: 1000px; margin: 0 auto; padding: 0 16px; }
+  header.hero { padding: 56px 0 32px; border-bottom: 1px solid var(--line); }
+  .eyebrow { color: var(--accent); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; font-size: 13px; }
+  h1 { font-size: clamp(30px, 5vw, 46px); line-height: 1.15; margin: 8px 0 16px; }
+  h2 { font-size: 26px; margin: 0 0 12px; }
+  h3 { font-size: 18px; margin: 20px 0 8px; }
+  p.lead { font-size: 19px; color: var(--muted); max-width: 720px; margin: 0 0 20px; }
+  section { padding: 40px 0; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: 0; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-top: 24px; }
+  .stat { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+  .stat b { display: block; font-size: 24px; }
+  .stat span { color: var(--muted); font-size: 13px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 18px; }
+  .card p { margin: 6px 0 0; color: var(--muted); font-size: 15px; }
+  figure { margin: 24px 0; }
+  figcaption { color: var(--muted); font-size: 14px; margin-top: 8px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; background: var(--panel); border-radius: 10px; overflow: hidden; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { background: color-mix(in srgb, var(--panel) 80%, var(--line)); font-weight: 600; }
+  td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .pass { color: var(--ok); font-weight: 600; }
+  .limit { color: var(--warn); font-weight: 600; }
+  .fail { color: var(--bad); font-weight: 600; }
+  .steps { counter-reset: step; list-style: none; padding: 0; margin: 0; }
+  .steps li { counter-increment: step; position: relative; padding: 12px 0 12px 48px; border-bottom: 1px dashed var(--line); }
+  .steps li::before { content: counter(step); position: absolute; left: 0; top: 10px; width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; display: grid; place-items: center; }
+  .steps li span { color: var(--muted); display: block; font-size: 15px; }
+  pre { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px; overflow-x: auto; font-size: 14px; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.92em; }
+  .note { border-left: 4px solid var(--warn); background: var(--panel); padding: 12px 16px; border-radius: 6px; color: var(--muted); }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+  .btn { display: inline-block; padding: 10px 16px; border-radius: 8px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; }
+  .btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+  footer { color: var(--muted); font-size: 14px; padding: 32px 0 56px; }
+  @media (max-width: 600px) {
+    main { padding: 0 16px; }
+    table { font-size: 14px; }
+    th, td { padding: 8px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header class="hero">
+  <div class="eyebrow">Isaac Sim 5.1 · Dual UR5e · Digital twin groundwork</div>
+  <h1>Two arms, one bar, measured in simulation</h1>
+  <p class="lead">
+    Two opposing UR5e arms with RG2 grippers hold and move a shared bar. This page
+    is a hands-on record: how to run it, what was measured, where the limits are,
+    and what a digital twin of this bench would still need.
+  </p>
+  <div class="cta">
+    <a class="btn" href="#run">Run it yourself</a>
+    <a class="btn ghost" href="https://github.com/kalebcoleman/rise-two-arm-research">View the repository</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>26 s</b><span>verified motion sequence</span></div>
+    <div class="stat"><b>100%</b><span>four-finger contact samples</span></div>
+    <div class="stat"><b>0</b><span>unexpected collisions</span></div>
+    <div class="stat"><b>0.135 mm</b><span>max translation slip</span></div>
+    <div class="stat"><b>20</b><span>load / speed trials</span></div>
+  </div>
+</header>
+
+<section>
+  <h2>The motion</h2>
+  <p>
+    The arms begin already grasping a 0.1&nbsp;kg bar, then translate, yaw, pitch,
+    return and settle into a final pose. The bar is a dynamic rigid body: nothing
+    teleports or welds it. Each frame below is from the recorded, measured run.
+  </p>
+  <figure>
+    <img src="media/storyboard.gif" alt="Storyboard of the two-arm motion: start, translate, yaw, pitch, return, final" loading="lazy">
+    <figcaption>Storyboard of the accepted sequence (six key frames, not a continuous video).</figcaption>
+  </figure>
+  <div class="grid">
+    <figure><img src="media/01-start.png" alt="Start pose" loading="lazy"><figcaption>Start: held pose.</figcaption></figure>
+    <figure><img src="media/02-translate.png" alt="Translate" loading="lazy"><figcaption>Translate by (0, 50, 30) mm.</figcaption></figure>
+    <figure><img src="media/03-yaw.png" alt="Yaw" loading="lazy"><figcaption>Yaw +10°.</figcaption></figure>
+    <figure><img src="media/04-pitch.png" alt="Pitch" loading="lazy"><figcaption>Pitch +5°.</figcaption></figure>
+    <figure><img src="media/05-return.png" alt="Return" loading="lazy"><figcaption>Return to the held pose.</figcaption></figure>
+    <figure><img src="media/06-final.png" alt="Final pose" loading="lazy"><figcaption>Final pose.</figcaption></figure>
+  </div>
+</section>
+
+<section id="run">
+  <h2>Run it yourself</h2>
+  <p>You need Isaac Sim 5.1.0, a working NVIDIA GPU and <code>nvidia-smi</code>. Then:</p>
+<pre><code>git clone https://github.com/kalebcoleman/rise-two-arm-research.git
+cd rise-two-arm-research
+RISE_PYTHON=/path/to/isaac-sim/python.sh ./isaac-sim-mcp/scripts/run_showcase.sh</code></pre>
+  <ol class="steps">
+    <li><strong>Press Play.</strong> The launcher runs fresh physics with the same controller and checks.<span>It passes only if slip, clearance, contact and tracking bounds all hold.</span></li>
+    <li><strong>Open the recording.</strong> <code>isaac-sim-mcp/showcase/recordings/WATCH - Two Arm Motion.usda</code> replays the measured transforms on a timeline.<span>Keep its <code>Recorded Motion.usdc</code> and <code>materials</code> folder beside it.</span></li>
+    <li><strong>Just watch, no install.</strong> Open <code>checkpoints/Approved/00 WATCH MOTION.usda</code> and press Play.</li>
+  </ol>
+  <p class="note">
+    Opening any other saved checkpoint restores a held pose, not a trajectory.
+    The motion history is only in the recording.
+  </p>
+</section>
+
+<section>
+  <h2>What was built</h2>
+  <div class="grid">
+    <div class="card"><h3>1. Two arms, collision checks</h3><p>Link frames, joint targets and collision setup for two UR5e rigs, including a corrected shoulder tracking and second-rig joint frames.</p></div>
+    <div class="card"><h3>2. Shared-object grasp</h3><p>Both grippers hold one bar. Pad frames, finger contacts, gravity release and a slip metric were checked. Checkpoint 06 is the accepted grasp.</p><figure style="margin:12px 0 0"><img src="media/shared-object-lift.png" alt="Shared object lift" loading="lazy"></figure></div>
+    <div class="card"><h3>3. Coordinated motion</h3><p>Object-space goals, per-arm inverse kinematics and position control. The path is set by the goal, not by commanding the bar.</p><figure style="margin:12px 0 0"><img src="media/coordinated-translate.png" alt="Coordinated translate" loading="lazy"></figure></div>
+    <div class="card"><h3>4. Load and speed limits</h3><p>Twenty trials sweeping bar mass and movement speed, with each failure classified as grip drift, drop or arm tracking.</p></div>
+  </div>
+  <p>
+    The lab repositories supplied the UR5e, RG2, quick changer and bench geometry.
+    <a href="https://github.com/kalebcoleman/rise-two-arm-research/blob/main/POST_CLONE_CHANGES.md">POST_CLONE_CHANGES.md</a>
+    separates supplied assets from the additions made here.
+  </p>
+</section>
+
+<section>
+  <h2>Results</h2>
+  <h3>Verified demo, measured in the recording</h3>
+  <table>
+    <tr><th>Check</th><th>Result</th></tr>
+    <tr><td>Fresh physics, presentation scene</td><td class="pass">Passed</td></tr>
+    <tr><td>Four-finger contact</td><td class="num">100% of samples</td></tr>
+    <tr><td>Unexpected collisions</td><td class="num">0</td></tr>
+    <tr><td>Max translation / rotational slip</td><td class="num">0.135 mm / 0.036°</td></tr>
+    <tr><td>Minimum clearance</td><td class="num">99.5 mm</td></tr>
+    <tr><td>Max position / rotation tracking error</td><td class="num">2.02 mm / 0.354°</td></tr>
+    <tr><td>Independent USDA Play</td><td class="pass">Passed (bar moved 16.93 mm in first 2 s)</td></tr>
+  </table>
+
+  <h3>How far can the bar go?</h3>
+  <p>
+    Held at the accepted grasp, mass and speed were varied one at a time. Across
+    20 trials, 13 passed and 7 failed. The limits are brackets between tested
+    endpoints, and the combined cases show they cannot simply be multiplied.
+  </p>
+  <table>
+    <tr><th>Experiment</th><th>Repeated pass</th><th>Repeated failure</th><th>What failed</th></tr>
+    <tr><td>Mass at 1x speed</td><td class="num pass">1.25 kg</td><td class="num fail">1.5 kg</td><td>4.9 mm relative grasp drift during load settling</td></tr>
+    <tr><td>Speed with 0.1 kg</td><td class="num pass">5x</td><td class="num limit">6x</td><td>10.05 mm object-goal tracking error; grip drift only 0.25 mm</td></tr>
+    <tr><td>Combined 1.25 kg / 5x</td><td class="num fail">Failed</td><td colspan="2">10.08 mm tracking error (a 0.625 kg / 5x run passed)</td></tr>
+  </table>
+  <figure>
+    <img src="media/operating-map.png" alt="Observed operating map of mass versus speed outcomes" loading="lazy">
+    <figcaption>Blank cells are untested. The map does not interpolate a safe region.</figcaption>
+  </figure>
+  <p class="note">
+    These are simulated, criterion-dependent results with fixed contact and drive
+    settings. They are not RG2 ratings, payload specifications or a general safe
+    envelope.
+  </p>
+</section>
+
+<section>
+  <h2>How to read the failures</h2>
+  <table>
+    <tr><th>Label</th><th>Meaning</th></tr>
+    <tr><td><span class="pass">Pass</span></td><td>Relative grasp drift ≤ 2 mm and rotation ≤ 1°, object tracking within 10 mm / 5°, clearance ≥ 50 mm, four-finger contact ≥ 95%, no unexpected collisions, saved stage replays.</td></tr>
+    <tr><td><span class="limit">Drift</span></td><td>The grip shifted relative to the arms during load settling, before any path motion.</td></tr>
+    <tr><td><span class="limit">Track</span></td><td>The arms or object lagged the moving goal. This is a controller tracking limit, not proven gripper slip.</td></tr>
+    <tr><td><span class="fail">Drop</span></td><td>The bar reached the table collider during initialization. Motion never began.</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>Learning path</h2>
+  <p>The project is organized as a sequence of short experiments. Each one introduces one idea.</p>
+  <ol class="steps">
+    <li><strong>Two arms and collisions.</strong><span>Link frames, joint targets and why saved joint frames matter. <a href="https://github.com/kalebcoleman/rise-two-arm-research/blob/main/isaac-sim-mcp/docs/DUAL_ARM_EXPERIMENT.md">Read the notes</a>.</span></li>
+    <li><strong>Shared-object grasp.</strong><span>Pad frames, finger contacts, gravity release and slip. <a href="https://github.com/kalebcoleman/rise-two-arm-research/blob/main/isaac-sim-mcp/docs/SHARED_OBJECT_EXPERIMENT.md">Read the notes</a>.</span></li>
+    <li><strong>Coordinated motion.</strong><span>Object-space goals and per-arm inverse kinematics. <a href="https://github.com/kalebcoleman/rise-two-arm-research/blob/main/isaac-sim-mcp/docs/COORDINATED_BAR_MOTION.md">Read the notes</a>.</span></li>
+    <li><strong>Load and speed limits.</strong><span>Separate grip drift from arm tracking failure. <a href="https://github.com/kalebcoleman/rise-two-arm-research/blob/main/isaac-sim-mcp/docs/BAR_LOAD_SPEED_LIMITS.md">Read the notes</a>.</span></li>
+  </ol>
+</section>
+
+<section>
+  <h2>Toward a digital twin</h2>
+  <p>
+    Right now this is a <em>simulation</em> of the bench, not a calibrated twin.
+    The model has uncalibrated contacts, position drives and suppressed robot gravity.
+    The next stages are about closing the gap to a real workstation:
+  </p>
+  <div class="grid">
+    <div class="card"><h3>Measure the bench</h3><p>Base, tool and camera transforms; joint offsets; object mass and inertia; actuator and gripper response; latency.</p></div>
+    <div class="card"><h3>Build a repeatable baseline</h3><p>One variable at a time, repeated trials around the observed failure boundaries, logged joint targets, object pose, contacts and saturation.</p></div>
+    <div class="card"><h3>Pair sim with real data</h3><p>Collect matched simulated and real observations, calibrate on one dataset and test on held-out conditions.</p></div>
+    <div class="card"><h3>Sim-to-real questions</h3><p>Does contact or actuation uncertainty predict slip? Do controller gains transfer across masses and speeds?</p></div>
+  </div>
+  <p class="note">Real-hardware commissioning is a separate future phase. No robot driver is started by this showcase.</p>
+</section>
+
+<section>
+  <h2>Reproduce the evidence</h2>
+  <ul>
+    <li><code>isaac-sim-mcp/showcase/recordings/report.json</code>, <code>replay-manifest.json</code>, <code>playback-verification.json</code>: pass result, hashes and playback checks.</li>
+    <li><code>isaac-sim-mcp/resources/bar-load-speed-limits/run-001/summary.json</code>: all 20 trials.</li>
+    <li><a href="https://github.com/kalebcoleman/rise-two-arm-research/blob/main/docs/VALIDATION.md">docs/VALIDATION.md</a>: the verified baseline record.</li>
+    <li><a href="https://github.com/kalebcoleman/rise-two-arm-research/blob/main/START_HERE.md">START_HERE.md</a>: reading order and roadmap.</li>
+  </ul>
+</section>
+
+<footer>
+  Simulation work in Isaac Sim 5.1.0. Upstream licenses apply; see
+  <a href="https://github.com/kalebcoleman/rise-two-arm-research/blob/main/docs/THIRD_PARTY.md">third-party provenance</a>.
+</footer>
+
+</main>
+</body>
+</html>
