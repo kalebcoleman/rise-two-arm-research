@@ -26,6 +26,7 @@ Opening a historical checkpoint by itself restores a pose, not a trajectory.
 ## Understand and extend the work
 
 - [Start here](START_HERE.md): reading order and research roadmap.
+- [Verified demo baseline](docs/VALIDATION.md): test results and evidence.
 - [Post-clone inventory](POST_CLONE_CHANGES.md): upstream features versus additions.
 - `isaac-sim-mcp/scripts/`: grasp, kinematics, motion, load/speed tests and demo.
 - `isaac-sim-mcp/docs/`: methods, measured results and limitations.
