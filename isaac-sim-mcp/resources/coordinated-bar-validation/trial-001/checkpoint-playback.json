@@ -1,0 +1,24 @@
+{
+  "checkpoint": "/home/kaleb/projects/RISE/checkpoints/20261027T164045.283144Z-08-coordinated-bar-motion-validated.usda",
+  "minimum_clearance_m": 0.12441140269089138,
+  "finger_contacts": [
+    [
+      true,
+      true
+    ],
+    [
+      true,
+      true
+    ]
+  ],
+  "unexpected_contacts": [],
+  "object_gravity_disabled": false,
+  "object_kinematic": false,
+  "object_joint_connections": [],
+  "object_position_m": [
+    0.02503899298608303,
+    -0.27504095435142517,
+    0.15453635156154633
+  ],
+  "pass": true
+}

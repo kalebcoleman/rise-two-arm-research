@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-28",
+  "checks": {
+    "python_compilation": "pass",
+    "shell_syntax": "pass",
+    "git_diff_whitespace": "pass",
+    "relocated_stage_composition": "pass",
+    "no_absolute_home_paths_in_flattened_scene": "pass",
+    "bar_dynamic_not_kinematic": "pass",
+    "synthetic_recording_transform_roundtrip": "pass",
+    "synthetic_recording_physics_schema_removal": "pass"
+  },
+  "live_physics_demo": "pass after matching NVIDIA module repair",
+  "actual_motion_recording": "recordings/WATCH - Two Arm Motion.usda",
+  "visual_playback": "pass: independent Play, rendered start/middle/end inspected"
+}

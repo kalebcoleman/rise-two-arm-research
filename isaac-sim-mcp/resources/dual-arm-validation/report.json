@@ -1,0 +1,579 @@
+{
+  "status": "complete",
+  "movement": [
+    {
+      "arm": 1,
+      "joint": "shoulder_pan_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        4.5299530029296875e-06,
+        1.0132789611816406e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "shoulder_pan_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        4.291534423828125e-06,
+        1.0132789611816406e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "shoulder_lift_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        3.635883331298828e-06,
+        1.0132789611816406e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "shoulder_lift_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        3.725290298461914e-06,
+        1.0132789611816406e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "elbow_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        4.500150680541992e-06,
+        1.0132789611816406e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "elbow_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        4.470348358154297e-06,
+        1.0132789611816406e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "wrist_1_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        4.470348358154297e-06,
+        1.0132789611816406e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "wrist_1_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        4.559755325317383e-06,
+        1.0132789611816406e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "wrist_2_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        4.112720489501953e-06,
+        1.0132789611816406e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "wrist_2_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        4.410743713378906e-06,
+        1.0132789611816406e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "wrist_3_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        3.4570693969726562e-06,
+        1.0132789611816406e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "wrist_3_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        3.5762786865234375e-07,
+        1.0132789611816406e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "shoulder_pan_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        4.351139068603516e-06
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "shoulder_pan_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        4.698708653450012e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "shoulder_lift_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        1.58846378326416e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "shoulder_lift_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        1.1265277862548828e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "elbow_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        7.310323417186737e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "elbow_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        1.4796853065490723e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "wrist_1_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        0.00010212138295173645
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "wrist_1_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        0.0004923325031995773
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "wrist_2_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        0.0002818666398525238
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "wrist_2_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        1.2665987014770508e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "wrist_3_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        8.14199447631836e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "wrist_3_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        0.0005000922828912735
+      ],
+      "pass": true
+    }
+  ],
+  "contact_events": [
+    {
+      "time_s": 64.09999999999765,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 0.0,
+      "min_separation_m": 0.002537243068218231
+    },
+    {
+      "time_s": 64.09999999999765,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 0.0,
+      "min_separation_m": 0.0018493697280064225
+    },
+    {
+      "time_s": 64.11666666666432,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 0.0,
+      "min_separation_m": 0.0011682079639285803
+    },
+    {
+      "time_s": 64.11666666666432,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 0.0,
+      "min_separation_m": 0.0005690011894330382
+    },
+    {
+      "time_s": 64.13333333333098,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 5.486513480712859,
+      "min_separation_m": -2.5079958504647948e-05
+    },
+    {
+      "time_s": 64.13333333333098,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 1.2540612095610866,
+      "min_separation_m": 5.0457969337003306e-05
+    },
+    {
+      "time_s": 64.14999999999765,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 2.661640802959474,
+      "min_separation_m": -8.805938733758012e-08
+    },
+    {
+      "time_s": 64.14999999999765,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 1.9286623829516214,
+      "min_separation_m": -2.047588395726052e-06
+    },
+    {
+      "time_s": 64.16666666666431,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 2.0695602858885525,
+      "min_separation_m": -1.6527153547940543e-06
+    },
+    {
+      "time_s": 64.16666666666431,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 2.309187403532052,
+      "min_separation_m": -2.0326733647380024e-06
+    },
+    {
+      "time_s": 64.18333333333098,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 2.387930483776994,
+      "min_separation_m": -2.092291879307595e-06
+    },
+    {
+      "time_s": 64.18333333333098,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 2.2902291439460725,
+      "min_separation_m": -2.218949020971195e-06
+    },
+    {
+      "time_s": 64.19999999999764,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 2.1136359046923405,
+      "min_separation_m": -2.0401287201821106e-06
+    },
+    {
+      "time_s": 64.19999999999764,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 2.0276182049561853,
+      "min_separation_m": -1.6974149730231147e-06
+    },
+    {
+      "time_s": 64.21666666666431,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 2.112593227868963,
+      "min_separation_m": -1.846431587182451e-06
+    },
+    {
+      "time_s": 64.21666666666431,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 2.240327798975994,
+      "min_separation_m": -2.032690645137336e-06
+    },
+    {
+      "time_s": 64.23333333333098,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 2.2967449176491694,
+      "min_separation_m": -2.1295361420925474e-06
+    },
+    {
+      "time_s": 64.23333333333098,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 2.2366043029963767,
+      "min_separation_m": -2.0103332190046785e-06
+    },
+    {
+      "time_s": 64.24999999999764,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 2.1718123634574713,
+      "min_separation_m": -1.9432884528214345e-06
+    },
+    {
+      "time_s": 64.24999999999764,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 2.1298691477680327,
+      "min_separation_m": -2.092291879307595e-06
+    },
+    {
+      "time_s": 64.2666666666643,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 2.1508414918164402,
+      "min_separation_m": -1.950724936250481e-06
+    },
+    {
+      "time_s": 64.2666666666643,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 2.18912894968738,
+      "min_separation_m": -1.891129727482621e-06
+    },
+    {
+      "time_s": 64.28333333333097,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 2.2244581340042773,
+      "min_separation_m": -2.084841071336996e-06
+    },
+    {
+      "time_s": 64.28333333333097,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 2.2268543890389623,
+      "min_separation_m": -2.0401389519975055e-06
+    },
+    {
+      "time_s": 64.29999999999764,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 0.0,
+      "min_separation_m": -2.010332536883652e-06
+    },
+    {
+      "time_s": 64.29999999999764,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 0.0,
+      "min_separation_m": 0.0012443899177014828
+    },
+    {
+      "time_s": 64.3166666666643,
+      "pair": [
+        "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+        "/World/UR5e/upper_arm_link/collisions/upperarm/mesh"
+      ],
+      "impulse_norm_sum_ns": 0.0,
+      "min_separation_m": 0.0037210516165941954
+    }
+  ],
+  "configuration": {
+    "arm1": "/World/UR5e",
+    "arm2": "/World/Arm2/UR5e",
+    "second_base_translation_m": [
+      0.0,
+      -0.65,
+      0.0
+    ],
+    "second_relative_yaw_deg": 180,
+    "home_rad": [
+      0.0,
+      -0.3,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "gravity": "disabled on both complete robot chains",
+    "control": "independent simulator articulation targets; no second ROS graph"
+  },
+  "external_physics_relationships": [],
+  "arm_colliders": {
+    "/World/UR5e": [
+      "/World/UR5e/base_link/collisions/base/mesh",
+      "/World/UR5e/shoulder_link/collisions/shoulder/mesh",
+      "/World/UR5e/upper_arm_link/collisions/upperarm/mesh",
+      "/World/UR5e/forearm_link/collisions/forearm/mesh",
+      "/World/UR5e/wrist_1_link/collisions/wrist1/mesh",
+      "/World/UR5e/wrist_2_link/collisions/wrist2/mesh",
+      "/World/UR5e/wrist_3_link/collisions/wrist3/mesh"
+    ],
+    "/World/Arm2/UR5e": [
+      "/World/Arm2/UR5e/base_link/collisions/base/mesh",
+      "/World/Arm2/UR5e/shoulder_link/collisions/shoulder/mesh",
+      "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+      "/World/Arm2/UR5e/forearm_link/collisions/forearm/mesh",
+      "/World/Arm2/UR5e/wrist_1_link/collisions/wrist1/mesh",
+      "/World/Arm2/UR5e/wrist_2_link/collisions/wrist2/mesh",
+      "/World/Arm2/UR5e/wrist_3_link/collisions/wrist3/mesh"
+    ]
+  },
+  "initial_home_errors_rad": [
+    3.606081008911133e-06,
+    1.0132789611816406e-05
+  ],
+  "initial_inter_rig_contacts": [],
+  "contact_target_rad": [
+    [
+      0.8799999952316284,
+      -0.30000001192092896,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "contact_actual_rad": [
+    [
+      [
+        0.8687918782234192,
+        -0.30006909370422363,
+        4.695306870416971e-06,
+        4.014750084024854e-05,
+        -1.0079816092911642e-05,
+        -2.8108109617619448e-08
+      ]
+    ],
+    [
+      [
+        0.8688262104988098,
+        -0.30006903409957886,
+        4.66083338324097e-06,
+        4.0224236727226526e-05,
+        -1.0098907296196558e-05,
+        -2.8102245863692588e-08
+      ]
+    ]
+  ],
+  "contact_tracking_errors_rad": [
+    0.011208117008209229,
+    0.011173784732818604
+  ],
+  "collision_pass": true,
+  "return_errors_rad": [
+    4.0531158447265625e-06,
+    2.106986357830465e-05
+  ],
+  "contacts_after_withdrawal": [],
+  "pass": true
+}

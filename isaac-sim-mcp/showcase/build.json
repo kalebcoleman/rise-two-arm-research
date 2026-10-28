@@ -1,0 +1,8 @@
+{
+  "source_checkpoint": "02 Grasp and Lift.usda",
+  "composition_errors": [],
+  "physics_runtime_verified": true,
+  "environment_changes": "Removed room, ROS graphs and loose parts; added tabletop with top at z=0 and studio lights.",
+  "motion": "Requires launch_showcase.py; this file alone is a held-pose start.",
+  "validation_report": "recordings/report.json"
+}

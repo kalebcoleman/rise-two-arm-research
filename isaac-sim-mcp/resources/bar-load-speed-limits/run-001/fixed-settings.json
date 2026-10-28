@@ -1,0 +1,28 @@
+{
+  "stage": "/home/kaleb/projects/RISE/checkpoints/Approved/Faster Moves/0.1kg - 5x.usda",
+  "physics": [
+    {
+      "path": "/physicsScene",
+      "hz": 120
+    }
+  ],
+  "object_material": {
+    "staticFriction": 0.800000011920929,
+    "dynamicFriction": 0.6000000238418579,
+    "restitution": 0.0
+  },
+  "grippers": [
+    {
+      "maxForce": 1.0,
+      "stiffness": 10000.0,
+      "damping": 1000.0,
+      "type": "acceleration"
+    },
+    {
+      "maxForce": 1.0,
+      "stiffness": 10000.0,
+      "damping": 1000.0,
+      "type": "acceleration"
+    }
+  ]
+}

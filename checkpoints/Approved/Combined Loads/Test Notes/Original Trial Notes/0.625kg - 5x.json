@@ -1,0 +1,22 @@
+{
+  "id": "19_0.625kg_5x",
+  "mass_kg": 0.625,
+  "requested_speed_scale": 5.0,
+  "group": "combined",
+  "repeat": false,
+  "pass": true,
+  "report": "/home/kaleb/projects/RISE/isaac-sim-mcp/resources/bar-load-speed-limits/run-001/19_0.625kg_5x/report.json",
+  "error": null,
+  "max_slip_m": 0.0004942686444922839,
+  "max_rotation_slip_deg": 0.13051425509281891,
+  "max_tracking_error_m": 0.009722758718237638,
+  "max_tracking_error_deg": 1.6320784134095745,
+  "minimum_clearance_m": 0.09906124965067323,
+  "contact_fraction": 1.0,
+  "peak_measured_linear_speed_m_s": 0.10356896044348878,
+  "peak_measured_angular_speed_deg_s": 17.846833374343642,
+  "measured_duration_s": 7.383333333333311,
+  "exact_checkpoint_replay_min_center_z_m": 0.12867888808250427,
+  "checkpoint": "/home/kaleb/projects/RISE/checkpoints/20261027T170645.580027Z-load-0.625kg-speed-5x-validated.usda",
+  "friendly_checkpoint": "/home/kaleb/projects/RISE/checkpoints/Approved/Combined Loads/0.625kg - 5x.usda"
+}

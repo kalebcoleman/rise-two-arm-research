@@ -1,0 +1,81 @@
+{
+  "status": "failed",
+  "pass": false,
+  "input_stage": "/home/kaleb/projects/RISE/isaac-sim-mcp/resources/bar-load-speed-limits/run-001/05_2kg_1x/setup.usda",
+  "goals": [
+    [
+      "translate",
+      [
+        0,
+        0.05,
+        0.03
+      ],
+      0,
+      0,
+      4.0
+    ],
+    [
+      "yaw",
+      [
+        0,
+        0.05,
+        0.03
+      ],
+      10,
+      0,
+      4.0
+    ],
+    [
+      "pitch",
+      [
+        0,
+        0.05,
+        0.03
+      ],
+      10,
+      5,
+      4.0
+    ],
+    [
+      "return",
+      [
+        0,
+        0,
+        0
+      ],
+      0,
+      0,
+      5.0
+    ]
+  ],
+  "samples": [],
+  "segments": [],
+  "unexpected_contacts": [
+    {
+      "time_s": 0.24999999999999997,
+      "phase": "initialize grasp",
+      "pair": [
+        "/World/SharedBar",
+        "/World/defaultGroundPlane/collisionPlane"
+      ]
+    },
+    {
+      "time_s": 0.24999999999999997,
+      "phase": "initialize grasp",
+      "pair": [
+        "/World/SharedBar",
+        "/World/defaultGroundPlane/collisionPlane"
+      ]
+    }
+  ],
+  "command_interval_s": 0.016666666666666666,
+  "limits": {
+    "translation_slip_m": 0.002,
+    "rotation_slip_deg": 1,
+    "minimum_clearance_m": 0.05,
+    "pose_error_m": 0.01,
+    "pose_error_deg": 5,
+    "bilateral_contact_fraction": 0.95
+  },
+  "error": "Traceback (most recent call last):\n  File \"/home/kaleb/projects/RISE/isaac-sim-mcp/scripts/coordinated_bar_motion.py\", line 162, in run\n    await settle(.5)\n  File \"/home/kaleb/projects/RISE/isaac-sim-mcp/scripts/coordinated_bar_motion.py\", line 104, in settle\n    raise RuntimeError('Unexpected collision detected; trajectory advancement stopped')\nRuntimeError: Unexpected collision detected; trajectory advancement stopped\n"
+}

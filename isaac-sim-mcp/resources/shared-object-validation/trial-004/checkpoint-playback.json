@@ -1,0 +1,36 @@
+{
+  "checkpoint": "/home/kaleb/projects/RISE/checkpoints/20261027T162819.114595Z-06-shared-grasp-lift-validated.usda",
+  "minimum_clearance_m": 0.09949494735111473,
+  "finger_contacts": [
+    [
+      true,
+      true
+    ],
+    [
+      true,
+      true
+    ]
+  ],
+  "object_gravity_disabled": false,
+  "object_kinematic": false,
+  "object_joint_connections": [],
+  "active_contacts": [
+    [
+      "/World/Arm2/RG2_Gripper/rg2_l_finger_link/collisions/finger/node_STL_BINARY_/mesh",
+      "/World/SharedBar"
+    ],
+    [
+      "/World/Arm2/RG2_Gripper/rg2_r_finger_link/collisions/finger/node_STL_BINARY_/mesh",
+      "/World/SharedBar"
+    ],
+    [
+      "/World/RG2_Gripper/rg2_l_finger_link/collisions/finger/node_STL_BINARY_/mesh",
+      "/World/SharedBar"
+    ],
+    [
+      "/World/RG2_Gripper/rg2_r_finger_link/collisions/finger/node_STL_BINARY_/mesh",
+      "/World/SharedBar"
+    ]
+  ],
+  "pass": true
+}

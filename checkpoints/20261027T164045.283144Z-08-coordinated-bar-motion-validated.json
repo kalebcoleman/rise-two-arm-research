@@ -1,0 +1,12 @@
+{
+  "created_utc": "20261027T164045.283144Z",
+  "label": "08-coordinated-bar-motion-validated",
+  "note": "Coordinated translation/yaw/pitch/return passed slip/collision bounds; held pose passed physical checkpoint replay.",
+  "source_stage": "/home/kaleb/projects/RISE/checkpoints/20261027T164042.592010Z-07-coordinated-bar-motion-pending-replay.usda",
+  "composition_errors": [],
+  "arm1_present": true,
+  "arm2_present": true,
+  "normalized_joint_count": 24,
+  "scope": "local referenced USD stage, stationary joint targets; no solver-state serialization",
+  "sha256": "002533ae44f9c441daeb4201f922c89884c59921b4e42564b08431c98e5d441a"
+}

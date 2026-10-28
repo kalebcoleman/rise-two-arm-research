@@ -1,0 +1,11 @@
+{
+  "created_utc": "20261027T071658.412010Z",
+  "label": "01-before-end-table-layout",
+  "note": "Stable stage before repositioning; prior layout measurements retained separately.",
+  "source_stage": "/home/kaleb/projects/RISE/BrickSim/python/bricksim/assets/stages/default_stage.usda",
+  "composition_errors": [],
+  "arm1_present": true,
+  "arm2_present": true,
+  "scope": "local referenced USD stage, stationary joint targets; no solver-state serialization",
+  "sha256": "82feeef9bffa0cb9d7475dff60112d8f7d19f17c5370d640a0a98cb93a96ebf6"
+}

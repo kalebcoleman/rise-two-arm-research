@@ -1,0 +1,12 @@
+{
+  "created_utc": "20261027T162819.114595Z",
+  "label": "06-shared-grasp-lift-validated",
+  "note": "Both grippers held/lifted shared bar, gravity release passed, checkpoint playback retained grasp.",
+  "source_stage": "/home/kaleb/projects/RISE/checkpoints/20261027T162814.675580Z-05-shared-lift-pending-release-check.usda",
+  "composition_errors": [],
+  "arm1_present": true,
+  "arm2_present": true,
+  "normalized_joint_count": 24,
+  "scope": "local referenced USD stage, stationary joint targets; no solver-state serialization",
+  "sha256": "f2112fb4c0f2d395e090101fa29fccd583c2dc29b8276081f0c08079818a4924"
+}

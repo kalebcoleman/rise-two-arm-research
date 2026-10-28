@@ -1,0 +1,11 @@
+{
+  "created_utc": "20261027T071807.819020Z",
+  "label": "03-end-table-validated",
+  "note": "All 24 independent joint cases and inter-arm contact/withdrawal passed; arms at separated home.",
+  "source_stage": "/home/kaleb/projects/RISE/BrickSim/python/bricksim/assets/stages/default_stage.usda",
+  "composition_errors": [],
+  "arm1_present": true,
+  "arm2_present": true,
+  "scope": "local referenced USD stage, stationary joint targets; no solver-state serialization",
+  "sha256": "1b98f5cef6dde84075ddd77a7b7fa34cf2f01c9df8fa796752fa59ab63d68ef8"
+}

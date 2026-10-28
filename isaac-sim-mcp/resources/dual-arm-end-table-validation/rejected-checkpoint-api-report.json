@@ -1,0 +1,33 @@
+{
+  "status": "error",
+  "movement": [],
+  "contact_events": [],
+  "checkpoints": [],
+  "configuration": {
+    "arm1": "/World/UR5e",
+    "arm2": "/World/Arm2/UR5e",
+    "first_base_translation_m": [
+      0.75,
+      -0.3,
+      0.0
+    ],
+    "second_base_translation_m": [
+      -0.75,
+      -0.3,
+      0.0
+    ],
+    "second_relative_yaw_deg": 180,
+    "home_rad": [
+      0.0,
+      -0.8,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "gravity": "disabled on both complete robot chains",
+    "control": "independent simulator articulation targets; no second ROS graph"
+  },
+  "error": "Traceback (most recent call last):\n  File \"/home/kaleb/projects/RISE/isaac-sim-mcp/scripts/dual_arm_experiment.py\", line 166, in run\n    report['checkpoints'].append(save_checkpoint(stage, '01-before-end-table-layout',\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/kaleb/projects/RISE/isaac-sim-mcp/scripts/dual_arm_experiment.py\", line 90, in save_checkpoint\n    'composition_errors': [str(e) for e in saved.GetCompositionErrors()],\n                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'Stage' object has no attribute 'GetCompositionErrors'\n",
+  "pass": false
+}

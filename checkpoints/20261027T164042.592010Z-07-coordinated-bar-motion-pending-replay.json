@@ -1,0 +1,12 @@
+{
+  "created_utc": "20261027T164042.592010Z",
+  "label": "07-coordinated-bar-motion-pending-replay",
+  "note": "Translation, yaw, pitch, return and final-pose slip/collision checks passed; exact-file replay pending.",
+  "source_stage": "/home/kaleb/projects/RISE/checkpoints/20261027T162819.114595Z-06-shared-grasp-lift-validated.usda",
+  "composition_errors": [],
+  "arm1_present": true,
+  "arm2_present": true,
+  "normalized_joint_count": 24,
+  "scope": "local referenced USD stage, stationary joint targets; no solver-state serialization",
+  "sha256": "da5825fe8879d3fb9b04c6fbec910d2a389189b2708cf99b257426a438e1f683"
+}

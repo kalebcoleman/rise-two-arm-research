@@ -1,0 +1,40 @@
+[
+  {
+    "date": "2026-06-11",
+    "repo_path": "system",
+    "change": "apt-get install x11vnc (view-only VNC screen streaming of DISPLAY :0 over Tailscale, for watching Isaac Sim from the Mac without touching the sim process)",
+    "details": "x11vnc runs as user aaugus11, -viewonly -shared -forever -bg, password file ~/.vnc_isaac_passwd, bound to Tailscale IPv4 100.97.45.92:5900 (IPv6 [::]:5900 also bound but only tailnet ULA is global). Not a systemd service - dies on reboot or 'pkill x11vnc'.",
+    "reversibility": "sudo apt-get remove -y x11vnc; pkill -15 x11vnc; rm ~/.vnc_isaac_passwd"
+  },
+  {
+    "date": "2026-06-11",
+    "repo_path": "system",
+    "host": "dual-a4500",
+    "change": "apt-get install x11vnc + started view server on DISPLAY :1 (screen viewing from Mac over Tailscale, mirrors a4500 setup)",
+    "details": "x11vnc as user aaugus11, input enabled, password file ~/.vnc_isaac_passwd, bound to 100.80.151.46:5900, low-latency flags (-defer/-wait 5, -nowireframe). Not a systemd service - dies on reboot or pkill x11vnc.",
+    "reversibility": "ssh aaugus11@dual-a4500 'pkill -15 -x x11vnc; sudo apt-get remove -y x11vnc; rm ~/.vnc_isaac_passwd'"
+  },
+  {
+    "date": "2026-06-11",
+    "repo_path": "system",
+    "host": "a4500 + dual-a4500",
+    "change": "x11vnc-view systemd USER unit enabled (permanent Linux->Mac VNC view, survives reboots via linger)",
+    "details": "Unit ~/.config/systemd/user/x11vnc-view.service runs ~/.local/bin/linux2mac-vnc.sh with FOREGROUND=1; Restart=always handles boot races (X/tailscale not up). Kit with README + script + unit at dual-a4500:~/Desktop/linux-to-mac-screen-share/. Linger was already on (both hosts).",
+    "reversibility": "systemctl --user disable --now x11vnc-view; rm ~/.config/systemd/user/x11vnc-view.service ~/.local/bin/linux2mac-vnc.sh"
+  },
+  {
+    "date": "2026-06-11",
+    "repo_path": "system",
+    "host": "a4500",
+    "change": "ursim-watchdog systemd user unit enabled (auto-replay external_control.urp after protective-stop program halts)",
+    "details": "Runs scripts/ursim_watchdog.sh (this repo): 10s programState poll; clears protective stops, replays program via dashboard start_external, leaves EMERGENCY/FAULT/VIOLATION alone; events logged to /tmp/ursim_watchdog.log. Trigger: jams in agent assembly runs stop the program -> silent motion-dead sim (recurred twice 2026-06-11).",
+    "reversibility": "systemctl --user disable --now ursim-watchdog; rm ~/.config/systemd/user/ursim-watchdog.service"
+  },
+  {
+    "date": "2026-06-14",
+    "repo_path": "~/.claude/skills/isaac-sim-extension-dev/scripts/isaacsim_launch.sh",
+    "change": "Launcher now adds a second --ext-folder ($HOME/Documents/omni-kit-mcp/exts) so a consumer extension's new 'omni.kit.mcp' dependency resolves. Part of extracting the generic MCP socket bridge into the standalone omni-kit-mcp repo.",
+    "details": "Added BRIDGE_EXT_FOLDER + EXTRA_EXT_FOLDER guard (only appended if the dir exists) and inserted $EXTRA_EXT_FOLDER into the launch nohup line. No-op when the bridge repo is absent. New repo: ~/Documents/omni-kit-mcp (Kit ext omni.kit.mcp, python module omni_kit_mcp). ur5e-dt converted to a bridge consumer (registers tools + start(8766)).",
+    "reversibility": "git -C ~/Documents/isaac-sim-mcp checkout -- exts/ur5e-dt; revert the isaacsim_launch.sh edit (remove BRIDGE_EXT_FOLDER/EXTRA_EXT_FOLDER lines + the $EXTRA_EXT_FOLDER token); rm -rf ~/Documents/omni-kit-mcp"
+  }
+]

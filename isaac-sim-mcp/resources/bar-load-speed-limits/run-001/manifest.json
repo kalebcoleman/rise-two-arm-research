@@ -1,0 +1,26 @@
+{
+  "recorded_utc": "2026-10-27T17:17:29.932442+00:00",
+  "baseline": "/home/kaleb/projects/RISE/checkpoints/20261027T162819.114595Z-06-shared-grasp-lift-validated.usda",
+  "baseline_sha256": "f2112fb4c0f2d395e090101fa29fccd583c2dc29b8276081f0c08079818a4924",
+  "current_reproduction_sources_sha256": {
+    "isaac-sim-mcp/scripts/bar_load_speed_limits.py": "995df3d1988722a32f25fcbc76cf3f0f69aad0c86662aa974b0f2176dae41255",
+    "isaac-sim-mcp/scripts/coordinated_bar_motion.py": "606fd85b57f6edd01a553af7233f4339dc66dac2466cb23ae23a48ffe042ab69",
+    "isaac-sim-mcp/scripts/shared_object_experiment.py": "152ca29d59a655888d78b1a134f2b44db74e3121df96ff7abe894a1df8ce8f97",
+    "isaac-sim-mcp/scripts/dual_arm_experiment.py": "ef181013e4ffcfe3493952fc0e9fdab8fa1dc3cbf729b92c1f7b0bfc48e65c9f",
+    "isaac-sim-mcp/scripts/render_bar_limit_report.py": "3e81413fffa9264ce4d89b89b208a760573ff8e2cd528ce31b2caf1120a94aa6"
+  },
+  "note": "The initial sweep was followed by independent strict replay of all Approved file copies. Current reproduction code includes that replay and improved note organization.",
+  "approved_browser_files": {
+    "/home/kaleb/projects/RISE/checkpoints/Approved/Heavier Bars/0.1kg - 1x.usda": "a1b6d0ba9ded93acde4b385ebc8f910d566a5cfb5171d5bf6d561c100c6f9df7",
+    "/home/kaleb/projects/RISE/checkpoints/Approved/Heavier Bars/0.25kg - 1x.usda": "74fd2540ff2468fe24d91b952041af4a9160f9caf58b65c1e33e0e47398a5a46",
+    "/home/kaleb/projects/RISE/checkpoints/Approved/Heavier Bars/0.5kg - 1x.usda": "a42aa3279217b1ee19803446c446abd6ff1e10801ac08132fd001a04d31a1f7a",
+    "/home/kaleb/projects/RISE/checkpoints/Approved/Heavier Bars/1kg - 1x.usda": "7d90862a5604a902d58f3de1162bc7fd5672ec8eb785088972347c2e3faf253e",
+    "/home/kaleb/projects/RISE/checkpoints/Approved/Heavier Bars/1.25kg - 1x.usda": "0aa2fe50a10c3a8c86953941b573e8cc9f72a316fac0b0bed79932193fb90144",
+    "/home/kaleb/projects/RISE/checkpoints/Approved/Faster Moves/0.1kg - 1x.usda": "edc17c9cc1db35bc5a6c0289c2547c8ce3c4616b66ca7121cafce8efcf33db59",
+    "/home/kaleb/projects/RISE/checkpoints/Approved/Faster Moves/0.1kg - 2x.usda": "53a117da84bc58a329764c65a15bbc19b9278cd4829cce1bbf38278bb8e29e93",
+    "/home/kaleb/projects/RISE/checkpoints/Approved/Faster Moves/0.1kg - 4x.usda": "cf4e94b385080189614f95b125753ab8945bff0201391cee6280ae081bc64873",
+    "/home/kaleb/projects/RISE/checkpoints/Approved/Faster Moves/0.1kg - 5x.usda": "ff1694cbdb08d3133d2d8dfd7ac45b8301542b812bd35ed7cceb22750fca93d2",
+    "/home/kaleb/projects/RISE/checkpoints/Approved/Combined Loads/1.25kg - 2x.usda": "14c87a63121699abf52a718eea2e5db4949e9e3bea3b183e600af6b84b4dddce",
+    "/home/kaleb/projects/RISE/checkpoints/Approved/Combined Loads/0.625kg - 5x.usda": "c5e450c40dcc6250c4483f66a780718be748ea47ae89ca1d86ecdf82dec3ee18"
+  }
+}

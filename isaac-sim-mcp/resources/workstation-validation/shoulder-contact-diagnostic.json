@@ -1,0 +1,46 @@
+{
+  "pairs": [
+    [
+      "/World/Cube",
+      "/World/UR5e/base_link/collisions/base/mesh"
+    ],
+    [
+      "/World/QuickChanger/quick_changer_link/collisions/quick_changer/node_STL_BINARY_/mesh",
+      "/World/defaultGroundPlane/collisionPlane"
+    ],
+    [
+      "/World/RG2_Gripper/rg2_hand_link/collisions/hand/node_STL_BINARY_/mesh",
+      "/World/QuickChanger/quick_changer_link/collisions/quick_changer/node_STL_BINARY_/mesh"
+    ],
+    [
+      "/World/RG2_Gripper/rg2_hand_link/collisions/hand/node_STL_BINARY_/mesh",
+      "/World/defaultGroundPlane/collisionPlane"
+    ],
+    [
+      "/World/UR5e/wrist_2_link/collisions/wrist2/mesh",
+      "/World/defaultGroundPlane/collisionPlane"
+    ],
+    [
+      "/World/UR5e/wrist_3_link/collisions/wrist3/mesh",
+      "/World/defaultGroundPlane/collisionPlane"
+    ],
+    [
+      "/World/UR5e/wrist_3_link/collisions/wrist3/mesh",
+      "/World/defaultGroundPlane/geom"
+    ],
+    [
+      "/World/UR5e/wrist_3_link/collisions/wrist3/mesh",
+      "/World/scene/roomScene/colliders/table"
+    ]
+  ],
+  "q": [
+    [
+      2.36964774558146e-06,
+      0.024876292794942856,
+      -0.002663489431142807,
+      0.0008069143514148891,
+      -0.00037370211794041097,
+      -0.00024384388234466314
+    ]
+  ]
+}

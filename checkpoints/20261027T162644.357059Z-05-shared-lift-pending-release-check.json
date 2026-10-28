@@ -1,0 +1,12 @@
+{
+  "created_utc": "20261027T162644.357059Z",
+  "label": "05-shared-lift-pending-release-check",
+  "note": "Shared object lift/hold passed; physical release and checkpoint playback still pending.",
+  "source_stage": "/home/kaleb/projects/RISE/isaac-sim-mcp/resources/shared-object-validation/trial-003/setup.usda",
+  "composition_errors": [],
+  "arm1_present": true,
+  "arm2_present": true,
+  "normalized_joint_count": 24,
+  "scope": "local referenced USD stage, stationary joint targets; no solver-state serialization",
+  "sha256": "ca1690c12a678e31ae83d21a2d3db4c87bd652ca9ed383987b33f6eec6144c22"
+}

@@ -1,0 +1,42 @@
+{
+  "pass": true,
+  "stage": "WATCH - Two Arm Motion.usda",
+  "duration_s": 26.066666666666666,
+  "play_advanced_to_s": 2.0000001043081284,
+  "bar_movement_during_play_m": 0.016925975406154932,
+  "composition_errors": [],
+  "physics_disabled": true,
+  "rendered_poses": [
+    {
+      "label": "start",
+      "time_s": 0,
+      "bar_position_m": [
+        3.1086856324691325e-05,
+        -0.2999846041202545,
+        0.12961071729660034
+      ]
+    },
+    {
+      "label": "middle",
+      "time_s": 13.033333333333333,
+      "bar_position_m": [
+        3.6685552913695574e-05,
+        -0.25001060962677,
+        0.159579336643219
+      ]
+    },
+    {
+      "label": "end",
+      "time_s": 26.066666666666666,
+      "bar_position_m": [
+        0.025038572028279305,
+        -0.2750103175640106,
+        0.15459199249744415
+      ]
+    }
+  ],
+  "sha256": {
+    "WATCH - Two Arm Motion.usda": "980260047b8142c53e711e2dd49d9954d14984b0bd68891d00b82f19f1313914",
+    "Recorded Motion.usdc": "bbb8046fcbab2386468c82ffdbdf356889eb3a35028d49588df4c0c18e52c9fd"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "created_utc": "20261027T071701.492917Z",
+  "label": "01b-folded-before-placement",
+  "note": "Both complete welded rigs folded through drives before changing base placement.",
+  "source_stage": "/home/kaleb/projects/RISE/BrickSim/python/bricksim/assets/stages/default_stage.usda",
+  "composition_errors": [],
+  "arm1_present": true,
+  "arm2_present": true,
+  "scope": "local referenced USD stage, stationary joint targets; no solver-state serialization",
+  "sha256": "73a0d868d2a94ece9155c14b5e659633d76d558416e5bdec7f2f6f86bc29be1d"
+}

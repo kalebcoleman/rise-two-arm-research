@@ -1,0 +1,133 @@
+{
+  "status": "failed",
+  "pass": false,
+  "input_stage": "/home/kaleb/projects/RISE/isaac-sim-mcp/resources/bar-load-speed-limits/run-001/06_1.5kg_1x/setup.usda",
+  "goals": [
+    [
+      "translate",
+      [
+        0,
+        0.05,
+        0.03
+      ],
+      0,
+      0,
+      4.0
+    ],
+    [
+      "yaw",
+      [
+        0,
+        0.05,
+        0.03
+      ],
+      10,
+      0,
+      4.0
+    ],
+    [
+      "pitch",
+      [
+        0,
+        0.05,
+        0.03
+      ],
+      10,
+      5,
+      4.0
+    ],
+    [
+      "return",
+      [
+        0,
+        0,
+        0
+      ],
+      0,
+      0,
+      5.0
+    ]
+  ],
+  "samples": [],
+  "segments": [],
+  "unexpected_contacts": [],
+  "command_interval_s": 0.016666666666666666,
+  "limits": {
+    "translation_slip_m": 0.002,
+    "rotation_slip_deg": 1,
+    "minimum_clearance_m": 0.05,
+    "pose_error_m": 0.01,
+    "pose_error_deg": 5,
+    "bilateral_contact_fraction": 0.95
+  },
+  "initial": {
+    "time_s": 0.5333333333333333,
+    "phase": "initialize grasp",
+    "object_position_m": [
+      -0.00040316066588275135,
+      -0.29993030428886414,
+      0.12343291193246841
+    ],
+    "object_rotation_matrix": [
+      [
+        0.9999457900368938,
+        -0.0017200645484597024,
+        0.01026929235348725
+      ],
+      [
+        0.001733023075696075,
+        0.9999977131753586,
+        -0.001253106169579582
+      ],
+      [
+        -0.010267113445918696,
+        0.0012708351593600235,
+        0.9999464842477752
+      ]
+    ],
+    "goal_position_m": [
+      2.913335083576385e-05,
+      -0.299988716840744,
+      0.1296023279428482
+    ],
+    "goal_rotation_matrix": [
+      [
+        0.999999524517691,
+        -0.0009422286334974261,
+        -0.00025133562000347515
+      ],
+      [
+        0.0009422155491396795,
+        0.9999995547538385,
+        -5.217263231134296e-05
+      ],
+      [
+        0.00025138466664530374,
+        5.193579517495935e-05,
+        0.9999999670542108
+      ]
+    ],
+    "translation_slip_m": [
+      0.0048687334479797645,
+      0.004784132225395398
+    ],
+    "rotation_slip_deg": [
+      0.8266291897157888,
+      0.3998054226175856
+    ],
+    "bottom_z_m": 0.09007546591982278,
+    "pose_error_m": 0.006184818837463087,
+    "pose_error_deg": 0.608373061495655,
+    "finger_contacts": [
+      [
+        true,
+        true
+      ],
+      [
+        true,
+        true
+      ]
+    ]
+  },
+  "error": "Traceback (most recent call last):\n  File \"/home/kaleb/projects/RISE/isaac-sim-mcp/scripts/coordinated_bar_motion.py\", line 170, in run\n    check(report['initial'])\n  File \"/home/kaleb/projects/RISE/isaac-sim-mcp/scripts/coordinated_bar_motion.py\", line 143, in check\n    raise RuntimeError('Slip, clearance, or object tracking limit exceeded')\nRuntimeError: Slip, clearance, or object tracking limit exceeded\n"
+}

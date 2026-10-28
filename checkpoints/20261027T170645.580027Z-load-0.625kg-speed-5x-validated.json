@@ -1,0 +1,12 @@
+{
+  "created_utc": "20261027T170645.580027Z",
+  "label": "load-0.625kg-speed-5x-validated",
+  "note": "Coordinated translation/yaw/pitch/return passed slip/collision bounds; held pose passed physical checkpoint replay.",
+  "source_stage": "/home/kaleb/projects/RISE/checkpoints/20261027T170642.934617Z-load-0.625kg-speed-5x-pending-replay.usda",
+  "composition_errors": [],
+  "arm1_present": true,
+  "arm2_present": true,
+  "normalized_joint_count": 24,
+  "scope": "local referenced USD stage, stationary joint targets; no solver-state serialization",
+  "sha256": "c5e450c40dcc6250c4483f66a780718be748ea47ae89ca1d86ecdf82dec3ee18"
+}

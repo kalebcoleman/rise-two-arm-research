@@ -1,0 +1,12 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+    startTimeCode = 0
+    endTimeCode = 1564
+    timeCodesPerSecond = 60
+    framesPerSecond = 60
+    subLayers = [@../../isaac-sim-mcp/showcase/recordings/WATCH - Two Arm Motion.usda@]
+    customLayerData = {
+        string riseReplay = "Recorded passing two-arm physics experiment. Press Play. Physics disabled in recording; use launcher for fresh physics."
+    }
+)

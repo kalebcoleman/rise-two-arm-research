@@ -1,0 +1,22 @@
+{
+  "id": "08_1.25kg_1x",
+  "mass_kg": 1.25,
+  "requested_speed_scale": 1,
+  "group": "mass repeat",
+  "repeat": true,
+  "pass": true,
+  "report": "/home/kaleb/projects/RISE/isaac-sim-mcp/resources/bar-load-speed-limits/run-001/08_1.25kg_1x/report.json",
+  "error": null,
+  "max_slip_m": 0.0007009550882589382,
+  "max_rotation_slip_deg": 0.24964731160637213,
+  "max_tracking_error_m": 0.0031102886618303138,
+  "max_tracking_error_deg": 0.3402795158306299,
+  "minimum_clearance_m": 0.09712638443393791,
+  "contact_fraction": 1.0,
+  "peak_measured_linear_speed_m_s": 0.021932373427082007,
+  "peak_measured_angular_speed_deg_s": 4.753704650806118,
+  "measured_duration_s": 20.98333333333339,
+  "exact_checkpoint_replay_min_center_z_m": 0.12639261782169342,
+  "checkpoint": "/home/kaleb/projects/RISE/checkpoints/20261027T170441.906196Z-load-1.25kg-speed-1x-validated.usda",
+  "friendly_checkpoint": "/home/kaleb/projects/RISE/checkpoints/Approved/Heavier Bars/1.25kg - 1x.usda"
+}

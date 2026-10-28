@@ -1,0 +1,14 @@
+{
+  "isaac-sim-mcp": {
+    "url": "https://github.com/inbarajaldrin/isaac-sim-mcp.git",
+    "commit": "27f610056017d7bffc2ff56fac6d219702b781a0"
+  },
+  "BrickSim": {
+    "url": "https://github.com/intelligent-control-lab/BrickSim.git",
+    "commit": "cbd5de3238e6ac12f44ef699e1507a9f16bdafc3"
+  },
+  "omni-kit-mcp": {
+    "url": "https://github.com/inbarajaldrin/omni-kit-mcp.git",
+    "commit": "68f738f60056a02701f449bfe043f676df35210e"
+  }
+}

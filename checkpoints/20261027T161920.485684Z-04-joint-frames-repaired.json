@@ -1,0 +1,12 @@
+{
+  "created_utc": "20261027T161920.485684Z",
+  "label": "04-joint-frames-repaired",
+  "note": "Canonical second-rig joint frames restored; full-payload checkpoint normalization; playback test pending.",
+  "source_stage": "/home/kaleb/projects/RISE/checkpoints/20261027T071807.819020Z-03-end-table-validated.usda",
+  "composition_errors": [],
+  "arm1_present": true,
+  "arm2_present": true,
+  "normalized_joint_count": 24,
+  "scope": "local referenced USD stage, stationary joint targets; no solver-state serialization",
+  "sha256": "0d54f855a9713a90def7c2ed0dd6065aa9b5b894686a64ba17c057786545f1ac"
+}

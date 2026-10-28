@@ -1,0 +1,12 @@
+{
+  "created_utc": "20261027T170642.934617Z",
+  "label": "load-0.625kg-speed-5x-pending-replay",
+  "note": "Translation, yaw, pitch, return and final-pose slip/collision checks passed; exact-file replay pending.",
+  "source_stage": "/home/kaleb/projects/RISE/isaac-sim-mcp/resources/bar-load-speed-limits/run-001/19_0.625kg_5x/setup.usda",
+  "composition_errors": [],
+  "arm1_present": true,
+  "arm2_present": true,
+  "normalized_joint_count": 24,
+  "scope": "local referenced USD stage, stationary joint targets; no solver-state serialization",
+  "sha256": "8c464b382488019f1cc9e885a4447029a074583223a5ed1df897719bbea3cede"
+}

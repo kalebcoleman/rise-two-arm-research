@@ -1,0 +1,164 @@
+{
+  "status": "complete",
+  "motion": [
+    {
+      "joint": "shoulder_pan_joint",
+      "delta_rad": -0.03,
+      "max_all_joint_error_rad": 4.500150680541992e-06,
+      "pass": true
+    },
+    {
+      "joint": "shoulder_pan_joint",
+      "delta_rad": 0.03,
+      "max_all_joint_error_rad": 4.500150680541992e-06,
+      "pass": true
+    },
+    {
+      "joint": "shoulder_lift_joint",
+      "delta_rad": -0.03,
+      "max_all_joint_error_rad": 3.7848949432373047e-06,
+      "pass": true
+    },
+    {
+      "joint": "shoulder_lift_joint",
+      "delta_rad": 0.03,
+      "max_all_joint_error_rad": 3.814697265625e-06,
+      "pass": true
+    },
+    {
+      "joint": "elbow_joint",
+      "delta_rad": -0.03,
+      "max_all_joint_error_rad": 4.32133674621582e-06,
+      "pass": true
+    },
+    {
+      "joint": "elbow_joint",
+      "delta_rad": 0.03,
+      "max_all_joint_error_rad": 4.4405460357666016e-06,
+      "pass": true
+    },
+    {
+      "joint": "wrist_1_joint",
+      "delta_rad": -0.03,
+      "max_all_joint_error_rad": 4.76837158203125e-06,
+      "pass": true
+    },
+    {
+      "joint": "wrist_1_joint",
+      "delta_rad": 0.03,
+      "max_all_joint_error_rad": 4.5299530029296875e-06,
+      "pass": true
+    },
+    {
+      "joint": "wrist_2_joint",
+      "delta_rad": -0.03,
+      "max_all_joint_error_rad": 4.470348358154297e-06,
+      "pass": true
+    },
+    {
+      "joint": "wrist_2_joint",
+      "delta_rad": 0.03,
+      "max_all_joint_error_rad": 4.32133674621582e-06,
+      "pass": true
+    },
+    {
+      "joint": "wrist_3_joint",
+      "delta_rad": -0.03,
+      "max_all_joint_error_rad": 2.592802047729492e-06,
+      "pass": true
+    },
+    {
+      "joint": "wrist_3_joint",
+      "delta_rad": 0.03,
+      "max_all_joint_error_rad": 8.642673492431641e-07,
+      "pass": true
+    }
+  ],
+  "progress": "finished",
+  "bench_collider_count": 385,
+  "robot_colliders": [
+    "/World/UR5e/base_link/collisions/base/mesh",
+    "/World/UR5e/shoulder_link/collisions/shoulder/mesh",
+    "/World/UR5e/upper_arm_link/collisions/upperarm/mesh",
+    "/World/UR5e/forearm_link/collisions/forearm/mesh",
+    "/World/UR5e/wrist_1_link/collisions/wrist1/mesh",
+    "/World/UR5e/wrist_2_link/collisions/wrist2/mesh",
+    "/World/UR5e/wrist_3_link/collisions/wrist3/mesh"
+  ],
+  "robot_colliders_enabled": true,
+  "temporarily_disabled_surfaces": [
+    "/World/scene/roomScene/colliders/table.physics:collisionEnabled",
+    "/World/defaultGroundPlane/geom.physics:collisionEnabled",
+    "/World/defaultGroundPlane/collisionPlane.physics:collisionEnabled"
+  ],
+  "camera": {
+    "rgb_shape": [
+      480,
+      640,
+      4
+    ],
+    "rgb_std": 73.40798383506943,
+    "depth_shape": [
+      480,
+      640
+    ],
+    "valid_depth_fraction": 1.0,
+    "pass": true
+  },
+  "bench_contact": {
+    "expected_center_z_m": -0.06547463681875278,
+    "actual_center_z_m": -0.06547465920448303,
+    "tail_z_range_m": 7.450580596923828e-09,
+    "pairs": [
+      [
+        "/World/RISE_BenchProbe",
+        "/World/Vention/Collisions/part_181"
+      ],
+      [
+        "/World/RISE_BenchProbe",
+        "/World/Vention/Collisions/part_202"
+      ],
+      [
+        "/World/RISE_BenchProbe",
+        "/World/scene/roomScene/colliders/floor"
+      ]
+    ],
+    "pass": true
+  },
+  "arm_ray_hit": {
+    "hit": "True",
+    "position": "(-0.584088,-0.00550067,0.391405)",
+    "normal": "(0.27497,0.144041,0.950602)",
+    "distance": "0.3792916536331177",
+    "faceIndex": "0",
+    "collision": "/World/UR5e/forearm_link/collisions/forearm/mesh",
+    "rigidBody": "/World/UR5e/forearm_link",
+    "material": "",
+    "protoIndex": "1298189376"
+  },
+  "robot_contact": {
+    "pairs": [
+      [
+        "/World/RISE_ArmProbe",
+        "/World/Vention/Collisions/part_008"
+      ],
+      [
+        "/World/RISE_ArmProbe",
+        "/World/Vention/Collisions/part_013"
+      ],
+      [
+        "/World/RISE_ArmProbe",
+        "/World/scene/roomScene/colliders/floor"
+      ],
+      [
+        "/World/UR5e/forearm_link/collisions/forearm/mesh",
+        "/World/RISE_ArmProbe"
+      ]
+    ],
+    "pass": true
+  },
+  "return_error_rad": 3.606081008911133e-06,
+  "probes_removed": true,
+  "legacy_surfaces_restored": true,
+  "pass": true
+}

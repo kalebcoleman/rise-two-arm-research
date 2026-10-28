@@ -1,0 +1,22 @@
+{
+  "id": "16_0.1kg_5x",
+  "mass_kg": 0.1,
+  "requested_speed_scale": 5.0,
+  "group": "speed repeat",
+  "repeat": true,
+  "pass": true,
+  "report": "/home/kaleb/projects/RISE/isaac-sim-mcp/resources/bar-load-speed-limits/run-001/16_0.1kg_5x/report.json",
+  "error": null,
+  "max_slip_m": 0.0003713251128493856,
+  "max_rotation_slip_deg": 0.09577167276622944,
+  "max_tracking_error_m": 0.009517052069522806,
+  "max_tracking_error_deg": 1.6334340809877086,
+  "minimum_clearance_m": 0.09947828863890078,
+  "contact_fraction": 1.0,
+  "peak_measured_linear_speed_m_s": 0.1035007339455052,
+  "peak_measured_angular_speed_deg_s": 17.700182049744022,
+  "measured_duration_s": 7.383333333333311,
+  "exact_checkpoint_replay_min_center_z_m": 0.12953974306583405,
+  "checkpoint": "/home/kaleb/projects/RISE/checkpoints/20261027T170612.484439Z-load-0.1kg-speed-5x-validated.usda",
+  "friendly_checkpoint": "/home/kaleb/projects/RISE/checkpoints/Approved/Faster Moves/0.1kg - 5x.usda"
+}

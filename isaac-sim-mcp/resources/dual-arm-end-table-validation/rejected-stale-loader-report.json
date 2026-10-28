@@ -1,0 +1,292 @@
+{
+  "status": "running",
+  "movement": [
+    {
+      "arm": 1,
+      "joint": "shoulder_pan_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        4.5299530029296875e-06,
+        1.0460615158081055e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "shoulder_pan_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        4.291534423828125e-06,
+        1.0460615158081055e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "shoulder_lift_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        3.635883331298828e-06,
+        1.0460615158081055e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "shoulder_lift_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        3.725290298461914e-06,
+        1.0460615158081055e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "elbow_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        4.500150680541992e-06,
+        1.0460615158081055e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "elbow_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        4.470348358154297e-06,
+        1.0460615158081055e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "wrist_1_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        4.470348358154297e-06,
+        1.0460615158081055e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "wrist_1_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        4.559755325317383e-06,
+        1.0460615158081055e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "wrist_2_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        4.112720489501953e-06,
+        1.0460615158081055e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "wrist_2_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        4.410743713378906e-06,
+        1.0460615158081055e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "wrist_3_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        3.4570693969726562e-06,
+        1.0460615158081055e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 1,
+      "joint": "wrist_3_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        3.5762786865234375e-07,
+        1.0460615158081055e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "shoulder_pan_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        4.794448614120483e-06
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "shoulder_pan_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        4.7441571950912476e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "shoulder_lift_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        1.1712312698364258e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "shoulder_lift_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        1.138448715209961e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "elbow_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        7.311441004276276e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "elbow_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        1.4781951904296875e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "wrist_1_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        0.00010208971798419952
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "wrist_1_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        0.0004923716187477112
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "wrist_2_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        2.5121495127677917e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "wrist_2_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        2.9167160391807556e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "wrist_3_joint",
+      "delta_rad": -0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        8.141808211803436e-05
+      ],
+      "pass": true
+    },
+    {
+      "arm": 2,
+      "joint": "wrist_3_joint",
+      "delta_rad": 0.03,
+      "errors_both_arms_rad": [
+        7.152557373046875e-07,
+        0.0005000922828912735
+      ],
+      "pass": true
+    }
+  ],
+  "contact_events": [],
+  "configuration": {
+    "arm1": "/World/UR5e",
+    "arm2": "/World/Arm2/UR5e",
+    "second_base_translation_m": [
+      0.0,
+      -0.65,
+      0.0
+    ],
+    "second_relative_yaw_deg": 180,
+    "home_rad": [
+      0.0,
+      -0.3,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "gravity": "disabled on both complete robot chains",
+    "control": "independent simulator articulation targets; no second ROS graph"
+  },
+  "external_physics_relationships": [],
+  "arm_colliders": {
+    "/World/UR5e": [
+      "/World/UR5e/base_link/collisions/base/mesh",
+      "/World/UR5e/shoulder_link/collisions/shoulder/mesh",
+      "/World/UR5e/upper_arm_link/collisions/upperarm/mesh",
+      "/World/UR5e/forearm_link/collisions/forearm/mesh",
+      "/World/UR5e/wrist_1_link/collisions/wrist1/mesh",
+      "/World/UR5e/wrist_2_link/collisions/wrist2/mesh",
+      "/World/UR5e/wrist_3_link/collisions/wrist3/mesh"
+    ],
+    "/World/Arm2/UR5e": [
+      "/World/Arm2/UR5e/base_link/collisions/base/mesh",
+      "/World/Arm2/UR5e/shoulder_link/collisions/shoulder/mesh",
+      "/World/Arm2/UR5e/upper_arm_link/collisions/upperarm/mesh",
+      "/World/Arm2/UR5e/forearm_link/collisions/forearm/mesh",
+      "/World/Arm2/UR5e/wrist_1_link/collisions/wrist1/mesh",
+      "/World/Arm2/UR5e/wrist_2_link/collisions/wrist2/mesh",
+      "/World/Arm2/UR5e/wrist_3_link/collisions/wrist3/mesh"
+    ]
+  },
+  "initial_home_errors_rad": [
+    3.606081008911133e-06,
+    1.0460615158081055e-05
+  ],
+  "initial_inter_rig_contacts": []
+}

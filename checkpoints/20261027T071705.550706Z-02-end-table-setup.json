@@ -1,0 +1,11 @@
+{
+  "created_utc": "20261027T071705.550706Z",
+  "label": "02-end-table-setup",
+  "note": "Opposite-end placement at separated folded home; movement/contact suite pending.",
+  "source_stage": "/home/kaleb/projects/RISE/BrickSim/python/bricksim/assets/stages/default_stage.usda",
+  "composition_errors": [],
+  "arm1_present": true,
+  "arm2_present": true,
+  "scope": "local referenced USD stage, stationary joint targets; no solver-state serialization",
+  "sha256": "97c02b44ad87a5ca6529e4690453e38754216cff6686833fdd4e08bea319b97e"
+}

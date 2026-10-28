@@ -1,0 +1,26 @@
+{
+  "status": "error",
+  "motion": [],
+  "progress": "finished",
+  "bench_collider_count": 385,
+  "robot_colliders": [
+    "/World/UR5e/base_link/collisions/base/mesh",
+    "/World/UR5e/shoulder_link/collisions/shoulder/mesh",
+    "/World/UR5e/upper_arm_link/collisions/upperarm/mesh",
+    "/World/UR5e/forearm_link/collisions/forearm/mesh",
+    "/World/UR5e/wrist_1_link/collisions/wrist1/mesh",
+    "/World/UR5e/wrist_2_link/collisions/wrist2/mesh",
+    "/World/UR5e/wrist_3_link/collisions/wrist3/mesh"
+  ],
+  "robot_colliders_enabled": true,
+  "temporarily_disabled_surfaces": [
+    "/World/scene/roomScene/colliders/table.physics:collisionEnabled",
+    "/World/defaultGroundPlane/geom.physics:collisionEnabled",
+    "/World/defaultGroundPlane/collisionPlane.physics:collisionEnabled"
+  ],
+  "error": "Traceback (most recent call last):\n  File \"/home/kaleb/projects/RISE/isaac-sim-mcp/scripts/validate_workstation.py\", line 85, in run\n    raise RuntimeError(f'Probe already exists: {path}')\nRuntimeError: Probe already exists: /World/RISE_BenchProbe\n",
+  "return_error_rad": 3.635883331298828e-06,
+  "probes_removed": true,
+  "legacy_surfaces_restored": true,
+  "pass": false
+}

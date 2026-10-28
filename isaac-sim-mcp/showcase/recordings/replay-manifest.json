@@ -1,0 +1,17 @@
+{
+  "replay": "WATCH - Two Arm Motion.usda",
+  "frames_recorded": 1560,
+  "duration_s": 26.066666666666666,
+  "physics_summary": {
+    "sample_count": 1289,
+    "simulation_duration_s": 25.56666800007224,
+    "max_translation_slip_m": 0.00013457648440388307,
+    "max_rotation_slip_deg": 0.03554446046901353,
+    "minimum_clearance_m": 0.0994953933350424,
+    "max_object_pose_error_m": 0.0020173202232325557,
+    "max_object_rotation_error_deg": 0.35355864840345275,
+    "bilateral_contact_fraction": 1.0,
+    "unexpected_collision_count": 0
+  },
+  "kind": "Recorded measured simulation transforms, physics disabled in replay"
+}
